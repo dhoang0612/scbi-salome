@@ -8,9 +8,6 @@
 @on deb,9  use s-salome-ng:s9-exp
 @on deb,10 use s-salome-ng:s10-exp
 
-#  Below specify the specific branches/versions to use
-s-smesh/ng:yan/parallel_mesh2
-s-netgen-plugin/ng:yan/parallel_mesh2
+#  Using the new CEA tgz which deactivate cpu_optimization option for ttk
 
-#  Disable this plug-in as non functional
-s-distene:skip
+s-salome-tar:#master-native-without-cpu-optimization:DB10
